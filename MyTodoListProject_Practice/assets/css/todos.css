@@ -1,0 +1,81 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #8E0E00;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+	background: #2980b9; 
+	color: white;
+	margin: 0;
+	padding: 10px 20px; 
+	text-transform: uppercase;
+	font-weight: normal; 
+	font-size: 24px; 
+}
+
+ul {
+	list-style: none; 
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	background: #fff; 
+	height: 40px;
+	line-height: 40px; 
+	color: #666;
+}
+
+li:nth-child(2n) {
+	background: #f7f7f7;
+	height: 40px;
+}
+
+span {
+	background: #e74c3c;
+	margin-right: 20px; 
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block; /*Display the whole area of span*/  
+	transition: 0.2s linear; 
+	opacity: 0; 
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1; 
+}
+
+input {
+	font-size: 18px;
+	color: #2980b9;
+	background-color: #f7f7f7; 
+	width: 100%; /*Does not include padding and margin and border just its content*/
+	/*margin: 0px 13px 13px 0px;*/
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box; /*The width includes the padding and border but not the margin*/ 
+	border: 3px solid rgba(0, 0, 0, 0); /*To eliminate the seen border around the input*/
+}
+
+input:focus {
+	background: #fff;
+	border: 2px solid #2980b9;
+	outline: none;
+}
+#container {
+	/*background: gray; */
+	width: 360px;
+	margin: 100px auto;
+	/*border: 2px solid gray;*/
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); 
+}
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+.fa-plus {
+	float: right;
+}
